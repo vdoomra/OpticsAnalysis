@@ -1,4 +1,4 @@
-This repository is a compilation of all the codes and scripts that were developed for the optics reconstruction for MOLLER.
+This repository is a compilation of all the codes and scripts that were developed for the optics reconstruction for the upcoming MOLLER Experiment at Jefferson Lab.
 
 Step 1: Run the Geant4 simulation with the MOLLER specific remoll framework, Use the script sBatchSubmit.py 
 

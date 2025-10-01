@@ -122,7 +122,7 @@ if __name__=='__main__':
   all_hole = [["11","12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43", "51", "52", "53", "61", "62", "63", "71", "72", "73"],
         ["11", "12", "13", "21", "22", "23", "31", "32", "33", "41", "42", "43", "51", "52", "53", "61", "62", "63", "71", "72", "73"]]
   all_pass = [["p1", "p2", "p3", "p4"], ["p1", "p2", "p3", "p4"]]
-  all_target = [["opticsUS","opticsUM", "opticsMS","opticsMD", "opticsDS"], ["opticsDS"]]
+  all_target = [["opticsUS","opticsUM", "opticsMS","opticsMD", "opticsDS"], ["opticsUS","opticsUM", "opticsMS","opticsMD", "opticsDS"]]
     
   fitFlag   = [0, 1]
   varNms    = ['theta [rad]', 'phi [rad]']
@@ -140,6 +140,7 @@ if __name__=='__main__':
           file_new = "csv_output/" + str(a_target) + "_" + str(a_pass) + "/C12_" + str(a_target) + "_" + str(a_pass)+ "_" + str(a_hole) + ".csv"
           df_new=pd.read_csv(file_new)
 
+          # Sample similar statistics from all the C Foil targets for unbiased results.
           if not df_new.empty:
             if a_target == "opticsDS":
               df_new_sampled = df_new.sample(frac=0.62, random_state=42)

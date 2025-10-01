@@ -1,6 +1,13 @@
 This repository is a compilation of all the codes and scripts that were developed for the optics reconstruction for the upcoming MOLLER Experiment at Jefferson Lab.
 
-Misc. Information: C12 Form Factors in beam Generator.pdf file was a very early on study that we preformed to prove that the beam generator in remoll incorporated the correct C12 form factors. The result from the beam generator was compared with that obtained with the dedicated C12 generator in remoll.
+Misc. Information: 
+
+1. C12 Form Factors in beam Generator.pdf file was a very early on study that we preformed to prove that the beam generator in remoll incorporated the correct C12 form factors. The result from the beam generator was compared with that obtained with the dedicated C12 generator in remoll.
+
+2. Generators in Remoll.pdf is another usefull presentation that shows how the sampling is done from various targets in the remoll framework. At the time the study was performed, we had 2 C Foil tagets in a single chamber (which is no longer the case).
+
+   
+The following steps will walk you throguh the optics reconstruction framework:
 
 Step 1: Run the Geant4 simulation with the MOLLER specific remoll framework, Use the script sBatchSubmit.py 
 
